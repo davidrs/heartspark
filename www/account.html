@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<body>
+	<div data-role="page" data-theme="d" id="account-page" >
+		<div data-role="header"   data-id="head1" data-position="fixed" class="ui-header" data-tap-toggle="false">
+			<a href="index.html" data-role="button" data-icon="arrow-l" data-inline="true" data-transition="none">Home</a>
+			 <h1>Heart Spark</h1>
+		</div>
+		<div data-role="content" >
+			<div id="facebookButtonContainer">
+				<div id="login-container">
+	            	<input type="email" pattern="[^ @]*@[^ @]*" placeholder="email@some.com" id="login-email"></input>
+	            	<input type="text" placeholder="password" id="login-passcode"></input>
+	                <a href="#" class="fbLoginButton" data-role="button" >Login / Register</a>
+           		 </div>
+           		 <a href="#" class="addNameButton" data-role="button" data-inline="true" data-mini="true">Add Name</a>
+                <a href="#" class="fbLogoutButton pull-right" data-role="button" data-inline="true" data-mini="true">Logout</a>
+            </div>
+			<div id="accountName"></div>
+
+			<img src="img/profileDefault.jpg" id="account-picture" />
+			<div id="accountStats">
+				<table class="table table-striped ">
+					<thead>
+						<tr>
+							<th>Action</th>
+							<th>Num</th>
+							<th>Total Points</th>
+						</tr>
+					</thead>
+					<tbody id="userTable">
+					</tbody>
+				</table>
+			</div>
+			<hr />
+			<div id="account-badges">
+				<div id="badge-box">
+					<!-- TODO automate badge creation -->
+					<figure  id='1_newUser'>
+					  <img src="img/badges/1_newUser.png" alt="">
+					  <figcaption>Account Created!</figcaption>
+					</figure>
+					<figure   id='1_newAed'>
+					  <img src="img/badges/1_newAed.png" alt="">
+					  <figcaption>Add a new AED</figcaption>
+					</figure>
+					<figure   id='1_mOk'>
+					  <img src="img/badges/1_mOk.png" alt="">
+					  <figcaption>First Maitenance Check</figcaption>
+					</figure>
+					<figure   id='1_gpsAnnotate'>
+					  <img src="img/badges/1_gpsAnnotate.png" alt="">
+					  <figcaption>First GPS Annotation</figcaption>
+					</figure>
+					<figure   id='1_picture'>
+					  <img src="img/badges/1_picture.png" alt="">
+					  <figcaption>First Picture</figcaption>
+					</figure>
+					<figure   id='3_picture'>
+					  <img src="img/badges/3_picture.png" alt="">
+					  <figcaption>Three Pictures</figcaption>
+					</figure>
+				</div>
+			</div>
+	        <div data-role="popup" class="jQM-popup">
+                <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                <p>Create an account to unlock badges!<p>
+            </div>
+		</div>
+		<div data-role="footer" data-id="account-footer" data-position="fixed" class="ui-footer ui-bar-a ui-footer-fixed fade ui-fixed-overlay" data-tap-toggle="false">
+
+			<div data-role="navbar" id="navbar" data-iconpos="top">
+				<ul>
+					<li>
+						<a href="account.html" data-prefetch data-transition="none" data-theme="" data-icon="nb-account" class="ui-btn-active ui-state-persist">
+							Account
+						</a>
+					</li>
+					<li>
+						<a href="leaderboard.html" data-prefetch data-transition="none" data-theme="" data-icon="nb-leaderboard">
+							Leaderboard
+						</a>
+					</li>
+					<li>
+						<a href="challenges.html" data-prefetch data-transition="none" data-theme="" data-icon="nb-challenges"  >
+							Challenges
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+

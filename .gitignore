@@ -1,0 +1,7 @@
+/platforms/*
+/plugins/*
+merges
+www.zip
+.DS_Store
+www/.project
+.cordova
